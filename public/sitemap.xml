@@ -3,26 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://androidoss.now.sh/posts/</loc>
     <lastmod>2019-09-09T23:12:30+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://androidoss.now.sh/</loc>
     <lastmod>2019-09-09T23:12:30+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/posts/first_test_post/</loc>
+    <loc>https://androidoss.now.sh/posts/first_test_post/</loc>
     <lastmod>2019-09-09T23:12:30+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://androidoss.now.sh/categories/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://androidoss.now.sh/tags/</loc>
   </url>
   
 </urlset>
