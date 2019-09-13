@@ -1,3 +1,9 @@
 [submodule "androidoss/theme/journal"]
 	path = androidoss/theme/journal
 	url = https://github.com/dashdashzako/hugo-journal.git
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
+[submodule "themes/simple-a"]
+	path = themes/simple-a
+	url = git@github.com:AlexFinn/simple-a.git
