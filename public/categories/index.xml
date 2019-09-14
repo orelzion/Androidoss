@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on אנדרוידוס - בלוג על אנדרואיד בעברית</title>
+    <link>https://androidoss.now.sh/categories/</link>
+    <description>Recent content in Categories on אנדרוידוס - בלוג על אנדרואיד בעברית</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>iw-IL</language>
+    
+	<atom:link href="https://androidoss.now.sh/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
