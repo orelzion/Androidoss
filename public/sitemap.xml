@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://androidoss.now.sh/posts/</loc>
+    <loc>https://androidoss.now.sh/post/</loc>
     <lastmod>2019-09-09T23:12:30+03:00</lastmod>
   </url>
   
@@ -13,7 +13,7 @@
   </url>
   
   <url>
-    <loc>https://androidoss.now.sh/posts/first_test_post/</loc>
+    <loc>https://androidoss.now.sh/post/first_test_post/</loc>
     <lastmod>2019-09-09T23:12:30+03:00</lastmod>
   </url>
   
