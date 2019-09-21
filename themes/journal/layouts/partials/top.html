@@ -18,13 +18,32 @@
   <title>{{ .Site.Title }}</title>
   <meta property="og:title" content="{{ .Site.Title }}">
   <meta property="og:type" content="website">
-  <meta name="description" content="{{ .Site.Params.description }}">
   {{- else -}}
   <title>{{ .Title }} - {{ .Site.Title }}</title>
   <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
   <meta property="og:type" content="article">
-  <meta name="description" content="{{ .Description }}">
   {{- end }}
+
+  <meta name="description" content="{{ with .Description }}
+{{ . }}
+{{ else }}
+{{if .IsPage}}{{ .Summary }}
+{{ else }}{{ with .Site.Params.description }}
+{{ . }}
+{{ end }}{{ end }}{{ end }}">
+
+{{if isset .Params "keywords"}}
+<meta name="keywords" 
+content="{{ delimit .Keywords ", " }},
+אנדרואיד, פיתוח אפליקציות" />
+{{else}}
+    {{if isset .Params "tags"}}
+        <meta name="keywords" content="{{ delimit .Params.Tags ", " }}, 
+        אנדרואיד, פיתוח אפליקציות" />
+    {{else}}
+         <meta name="keywords" content="אנדרואיד, פיתוח אפליקציות" />
+     {{end}}
+{{end}}
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Arvo:400,700">
   <link rel="stylesheet" href="{{ "css/highlight.css" | relURL }}">
