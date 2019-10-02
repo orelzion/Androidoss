@@ -1,37 +1,50 @@
+<footer class="site-footer">
+  <span itemscope itemtype="http://schema.org/Person">
+    <link itemprop="url" href="{{ .Site.BaseURL }}">
+    <span itemprop="name">{{- .Site.Author.name -}}</span>
 
-      <footer class="site-footer">
-        <span itemscope itemtype="http://schema.org/Person">
-          <link itemprop="url" href="{{ .Site.BaseURL }}">
-          <span itemprop="name">{{- .Site.Author.name -}}</span>
+    {{ if isset .Site.Params "work" -}},
+    <span itemprop="jobTitle">{{- .Site.Params.work.jobTitle -}}</span> at
+    <span itemprop="memberOf" itemscope itemtype="http://schema.org/Organization"><a itemprop="url"
+        href="{{ .Site.Params.work.companyUrl }}"><span itemprop="name">
+          {{- .Site.Params.work.company -}}
+        </span></a></span>
+    {{- end -}}
 
-          {{ if isset .Site.Params "work" -}},
-          <span itemprop="jobTitle">{{- .Site.Params.work.jobTitle -}}</span> at
-          <span itemprop="memberOf" itemscope itemtype="http://schema.org/Organization"><a itemprop="url" href="{{ .Site.Params.work.companyUrl }}"><span itemprop="name">
-            {{- .Site.Params.work.company -}}
-          </span></a></span>
-          {{- end -}}
+    <br>
 
-          <br>
+    {{ if isset .Site.Params "githubusername" -}}
+    <a itemprop="sameAs" href="https://github.com/{{ .Site.Params.githubUsername }}" title="GitHub">GH</a>
+    {{- end }}
 
-          {{ if isset .Site.Params "githubusername" -}}
-          <a itemprop="sameAs" href="https://github.com/{{ .Site.Params.githubUsername }}" title="GitHub">GH</a>
-          {{- end }}
+    {{ if isset .Site.Params "twitterusername" -}}
+    <a itemprop="sameAs" href="https://twitter.com/{{ .Site.Params.twitterUsername }}" title="Twitter">TW</a>
+    {{- end}}
 
-          {{ if isset .Site.Params "twitterusername" -}}
-          <a itemprop="sameAs" href="https://twitter.com/{{ .Site.Params.twitterUsername }}" title="Twitter">TW</a>
-          {{- end}}
+    {{ if isset .Site.Params "gpg" -}}
+    <a itemprop="sameAs" href="{{ .Site.Params.gpg.link }}"
+      title="GPG {{ .Site.Params.gpg.key }} (fingerprint: {{ .Site.Params.gpg.fingerprint }})">GPG</a>
+    {{- end }}
+  </span>
 
-          {{ if isset .Site.Params "gpg" -}}
-          <a itemprop="sameAs" href="{{ .Site.Params.gpg.link }}" title="GPG {{ .Site.Params.gpg.key }} (fingerprint: {{ .Site.Params.gpg.fingerprint }})">GPG</a>
-          {{- end }}
-        </span>
+  <span>
+    <form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/orelzion"
+      method="post" target="popupwindow"
+      onsubmit="window.open('https://tinyletter.com/orelzion', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+      <p><label for="tlemail">הירשמו לקבלת עדכונים</label></p>
+      <p><input type="text" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1"
+        name="embed" /><input type="submit" value="אני רוצה להתעדכן" />
+      <p><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></p>
+    </form>
+  </span>
 
-        <!-- {{ hugo.BuildDate }} -->
-      </footer>
-    </div>
+  <!-- {{ hugo.BuildDate }} -->
+</footer>
+</div>
 
-  <script src="{{ "js/highlight.pack.js" | relURL }}"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+<!-- <script src="{{ "js/highlight.pack.js" | relURL }}"></script>
+<script>hljs.initHighlightingOnLoad();</script> -->
 
-  </body>
+</body>
+
 </html>

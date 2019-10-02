@@ -5,3 +5,5 @@ description = "בלוג למפתחי אנדרואיד בעברית"
 theme = "journal"
 
 disqusShortname = "androidoss"
+pygmentsCodefences = true
+pygmentsStyle = "dracula"

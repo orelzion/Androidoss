@@ -6,9 +6,73 @@
     <description>Recent content in Tags on אנדרוידוס - בלוג על אנדרואיד בעברית</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>iw-IL</language>
+    <lastBuildDate>Wed, 02 Oct 2019 21:46:20 +0300</lastBuildDate>
     
 	<atom:link href="https://androidoss.now.sh/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>named parameters</title>
+      <link>https://androidoss.now.sh/tags/named-parameters/</link>
+      <pubDate>Wed, 02 Oct 2019 21:46:20 +0300</pubDate>
+      
+      <guid>https://androidoss.now.sh/tags/named-parameters/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>null</title>
+      <link>https://androidoss.now.sh/tags/null/</link>
+      <pubDate>Wed, 02 Oct 2019 21:46:20 +0300</pubDate>
+      
+      <guid>https://androidoss.now.sh/tags/null/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>null check</title>
+      <link>https://androidoss.now.sh/tags/null-check/</link>
+      <pubDate>Wed, 02 Oct 2019 21:46:20 +0300</pubDate>
+      
+      <guid>https://androidoss.now.sh/tags/null-check/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>בדיקת null</title>
+      <link>https://androidoss.now.sh/tags/%D7%91%D7%93%D7%99%D7%A7%D7%AA-null/</link>
+      <pubDate>Wed, 02 Oct 2019 21:46:20 +0300</pubDate>
+      
+      <guid>https://androidoss.now.sh/tags/%D7%91%D7%93%D7%99%D7%A7%D7%AA-null/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ג׳אווה</title>
+      <link>https://androidoss.now.sh/tags/%D7%92%D7%90%D7%95%D7%95%D7%94/</link>
+      <pubDate>Wed, 02 Oct 2019 21:46:20 +0300</pubDate>
+      
+      <guid>https://androidoss.now.sh/tags/%D7%92%D7%90%D7%95%D7%95%D7%94/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>קוטלין</title>
+      <link>https://androidoss.now.sh/tags/%D7%A7%D7%95%D7%98%D7%9C%D7%99%D7%9F/</link>
+      <pubDate>Wed, 02 Oct 2019 21:46:20 +0300</pubDate>
+      
+      <guid>https://androidoss.now.sh/tags/%D7%A7%D7%95%D7%98%D7%9C%D7%99%D7%9F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>אודות</title>
+      <link>https://androidoss.now.sh/tags/%D7%90%D7%95%D7%93%D7%95%D7%AA/</link>
+      <pubDate>Sun, 15 Sep 2019 22:08:34 +0300</pubDate>
+      
+      <guid>https://androidoss.now.sh/tags/%D7%90%D7%95%D7%93%D7%95%D7%AA/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

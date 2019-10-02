@@ -101,13 +101,17 @@ pre {
 }
 
 pre {
-  max-width: 100%; }
+  max-width: 100%; 
+  white-space: pre-wrap;
+  border-radius: 5px;
+  padding: 3px;
+}
 
 kbd,
 code {
   margin: 0;
   padding: .125rem .25rem 0;
-  background-color: #e5e5e5; }
+}
 
 article,
 section {
