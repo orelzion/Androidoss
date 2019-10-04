@@ -32,20 +32,20 @@
 {{ . }}
 {{ end }}{{ end }}{{ end }}">
 
-{{if isset .Params "keywords"}}
-<meta name="keywords" 
-content="{{ delimit .Keywords ", " }},
+  {{if isset .Params "keywords"}}
+  <meta name="keywords" content="{{ delimit .Keywords ", " }},
 אנדרואיד, פיתוח אפליקציות" />
-{{else}}
-    {{if isset .Params "tags"}}
-        <meta name="keywords" content="{{ delimit .Params.Tags ", " }}, 
+  {{else}}
+  {{if isset .Params "tags"}}
+  <meta name="keywords" content="{{ delimit .Params.Tags ", " }}, 
         אנדרואיד, פיתוח אפליקציות" />
-    {{else}}
-         <meta name="keywords" content="אנדרואיד, פיתוח אפליקציות" />
-     {{end}}
-{{end}}
+  {{else}}
+  <meta name="keywords" content="אנדרואיד, פיתוח אפליקציות" />
+  {{end}}
+  {{end}}
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Arvo:400,700">
+  <link href="https://fonts.googleapis.com/css?family=Tinos&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Secular+One|Arvo:400,700">
   <!-- <link rel="stylesheet" href="{{ "css/highlight.css" | relURL }}"> -->
   <link rel="stylesheet" href="{{ "css/journal.css" | relURL }}">
   <link href="{{ "index.xml" | relURL }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
@@ -53,15 +53,25 @@ content="{{ delimit .Keywords ", " }},
 </head>
 
 <body>
-  <div class="container">
+  <div class="sidebar-wrapper">
+    <div class="about-container">
+      <a href="{{ .Site.BaseURL }}">
+        <p class="header-text">{{ .Site.Title }}</p>
+      </a>
+      <p class="subheader-text">
+        בלוג למפתחי אנדרואיד מתחילים.
+        <br>
+        נכתב על ידי <a href='https://github.com/orelzion'>אוראל ציון</a> מפתח אנדרואיד מאז 2012.
+        <br>
+        כרגע מפתח ב<a href='https://ridewithvia.com/'>Via</a>.
+      </p>
+      <p class="site-links">
+        <a href="/">כל הפוסטים</a>
+        <a href="/tags">תגיות</a>
+        <a href="/post/aboutme_post">אודות</a>
+        <a href="https://tinyletter.com/orelzion">ניוזלטר</a>
+      </p>
+    </div>
+  </div>
 
-    {{ if .IsHome -}}
-    <header class="site-header">
-      <img alt="header" src="/header.png">
-      <p>{{ .Site.Params.tagline }}</p>
-    </header>
-    {{- else -}}
-    <nav class="site-nav">
-      <a href="{{ .Site.BaseURL }}">Index</a>
-    </nav>
-    {{- end }}
+  <div class="container">
