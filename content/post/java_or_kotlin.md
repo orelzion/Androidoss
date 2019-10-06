@@ -2,7 +2,8 @@
 title: "ג׳אווה או קוטלין"
 date: 2019-10-02T21:46:20+03:00
 draft: false
-tags: ["ג׳אווה", "קוטלין", "named parameters", "null", "null check", "בדיקת null"]
+keywords: ["ג׳אווה", "קוטלין", "named parameters", "null", "null check", "בדיקת null"]
+tags: ["קוטלין", "מתחילים"]
 ---
 טוב זו שאלה שיכולה להבעיר מחלקות פיתוח שלמות 😀
 אבל כדי לענות עליה, ננסה להבין קודם מה זה בכלל קוטלין.

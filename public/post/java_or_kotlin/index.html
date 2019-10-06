@@ -20,18 +20,17 @@
 
   <meta name="description" content="
 טוב זו שאלה שיכולה להבעיר מחלקות פיתוח שלמות 😀 אבל כדי לענות עליה, ננסה להבין קודם מה זה בכלל קוטלין.
-מה זה קוטלין? קוטלין היא שפת תכנות מודרנית שפותחה על ידי JetBrains (אותה חברה שמפתחת את אנראויד סטודיו) בשנת 2011. בשנת 2017 היא הוכרזה כשפה רשמית לפיתוח לאנדרואיד על ידי גוגל, וכיום כל המדריכים באתר של גוגל כוללים דוגמאות קוד גם בקוטלין.
+מה זה קוטלין? קוטלין היא שפת תכנות מודרנית שפותחה על ידי JetBrains (אותה חברה שפיתחה את IntelliJ שעליה מבוסס אנדרואיד סטודיו) בשנת 2011. בשנת 2017 היא הוכרזה כשפה רשמית לפיתוח לאנדרואיד על ידי גוגל, וכיום כל המדריכים באתר של גוגל כוללים דוגמאות קוד גם בקוטלין.
 קוטלין מכוונת להיות תמציתית, בטוחה, משותפת ונוחה על כל ide.
 ">
 
+  
+  <meta name="keywords" content="ג׳אווה, קוטלין, named parameters, null, null check, בדיקת null,
+אנדרואיד, פיתוח אפליקציות" />
+  
 
-    
-        <meta name="keywords" content="ג׳אווה, קוטלין, named parameters, null, null check, בדיקת null, 
-        אנדרואיד, פיתוח אפליקציות" />
-    
-
-
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Arvo:400,700">
+  <link href="https://fonts.googleapis.com/css?family=Tinos&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Secular+One|Arvo:400,700">
   
   <link rel="stylesheet" href="/css/journal.css">
   <link href="/index.xml" rel="alternate" type="application/rss+xml" title="אנדרוידוס - בלוג על אנדרואיד בעברית">
@@ -39,18 +38,48 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="sidebar-wrapper">
+    <div class="about-container">
+      <a href="https://androidoss.now.sh">
+        <p class="header-text">אנדרוידוס - בלוג על אנדרואיד בעברית</p>
+      </a>
+      <p class="subheader-text">
+        בלוג למפתחי אנדרואיד מתחילים.
+        <br>
+        נכתב על ידי <a href='https://github.com/orelzion' target="_blank">אוראל ציון</a> מפתח אנדרואיד מאז 2012.
+        <br>
+        כרגע מפתח ב<a href='https://ridewithvia.com/' target="_blank">Via</a>.
+      </p>
+      <p class="site-links">
+        <a href="/">כל הפוסטים</a>
+        <a href="/tags">תגיות</a>
+        <a href="/post/aboutme_post">אודות</a>
+        <a href="https://tinyletter.com/orelzion">ניוזלטר</a>
+      </p>
+    </div>
+  </div>
 
-    <nav class="site-nav">
-      <a href="https://androidoss.now.sh">Index</a>
-    </nav>
+  <div class="container">
 
 <article class="post">
   <header class="post-header">
     <h1 class="post-title">ג׳אווה או קוטלין</h1>
-    <time class="post-date"
-      datetime="2019-10-02 21:46:20 IDT">02 Oct 2019</time>
+    <div class="post-meta">
+      <time class="post-date" datetime="2019-10-02 21:46:20 IDT">
+        2 אוקטובר 2019
+      </time>
+      <span class="reading-time">(8 דקות קריאה)</span>
+    </div>
+    
+
+<ul class="tags-container">
+    
+    <a class="tags" href="https://androidoss.now.sh/tags/%D7%A7%D7%95%D7%98%D7%9C%D7%99%D7%9F/">#קוטלין</a>
+    <a class="tags" href="https://androidoss.now.sh/tags/%D7%9E%D7%AA%D7%97%D7%99%D7%9C%D7%99%D7%9D/">#מתחילים</a></ul>
+
   </header>
+
+  <div class="addthis_inline_share_toolbox"></div>
 
   
 
@@ -59,7 +88,7 @@
 
 <h1 id="מה-זה-קוטלין">מה זה קוטלין?</h1>
 
-<p>קוטלין היא שפת תכנות מודרנית שפותחה על ידי <a href="http://jetbrains.com/">JetBrains</a> (אותה חברה שמפתחת את אנראויד סטודיו) בשנת 2011. בשנת 2017 היא הוכרזה כשפה רשמית לפיתוח לאנדרואיד על ידי גוגל, וכיום כל המדריכים באתר של גוגל כוללים דוגמאות קוד גם בקוטלין.</p>
+<p>קוטלין היא שפת תכנות מודרנית שפותחה על ידי <a href="http://jetbrains.com/">JetBrains</a> (אותה חברה שפיתחה את IntelliJ שעליה מבוסס אנדרואיד סטודיו) בשנת 2011. בשנת 2017 היא הוכרזה כשפה רשמית לפיתוח לאנדרואיד על ידי גוגל, וכיום כל המדריכים באתר של גוגל כוללים דוגמאות קוד גם בקוטלין.</p>
 
 <p>קוטלין מכוונת להיות תמציתית, בטוחה, משותפת ונוחה על כל ide. כך לפחות היא מוצגת באתר <a href="https://kotlinlang.org/">הרשמי</a>.</p>
 
@@ -67,28 +96,31 @@
 
 <p>קוטלין מנסה לגרום לנו לכתוב כמה שפחות קוד, גם כדי שיהיה לנו יותר נוח, אבל גם כי פחות קוד = פחות באגים. באופן טבעי באגים נובעים מקוד, כך שככל שכתבנו פחות קוד הסיכוי שכתבנו באגים פוחת 😀.</p>
 
-<p>זה בא לידי ביטוי בכך שקוטלין נטשה את סימן ה <code>;</code> שבא לסמן סוף פקודה בג&rsquo;אווה, בקוטלין גם אין <code>new</code> כדי לאתחל אובייקט פשוט קוראים לקונסטרקור שלו ישירות.</p>
+<p>זה בא לידי ביטוי בכך שקוטלין נטשה את סימן ה <code>;</code> שבא לסמן סוף פקודה בג&rsquo;אווה, בקוטלין גם אין <code>new</code> כדי לאתחל אובייקט פשוט קוראים לקונסטרקטור שלו ישירות.</p>
 
 <p>וגם לדוגמה הקלאס הפשוט הזה בג&rsquo;אווה</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#000;font-weight:bold">public</span> <span style="color:#900;font-weight:bold">class</span> Dog {
-    <span style="color:#000;font-weight:bold">private</span> <span style="color:#900;font-weight:bold">String</span> name;
-    <span style="color:#000;font-weight:bold">private</span> <span style="color:#900;font-weight:bold">String</span> race;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#8be9fd;font-style:italic">public</span> <span style="color:#50fa7b">class</span> Dog {
+    <span style="color:#8be9fd;font-style:italic">private</span> <span style="color:#50fa7b">String</span> name;
+    <span style="color:#8be9fd;font-style:italic">private</span> <span style="color:#50fa7b">String</span> race;
 
-    <span style="color:#000;font-weight:bold">public</span> <span style="color:#900;font-weight:bold">Dog</span>(String <span style="color:#900;font-weight:bold">name</span>, String <span style="color:#900;font-weight:bold">race</span>) {
-        <span style="color:#000;font-weight:bold">this</span>.<span style="color:#008080">name</span> <span style="color:#000;font-weight:bold">=</span> name;
-        <span style="color:#000;font-weight:bold">this</span>.<span style="color:#008080">race</span> <span style="color:#000;font-weight:bold">=</span> race;
+    <span style="color:#8be9fd;font-style:italic">public</span> <span style="color:#50fa7b">Dog</span>(String <span style="color:#50fa7b">name</span>, String <span style="color:#50fa7b">race</span>) {
+        <span style="color:#ff79c6">this</span>.<span style="color:#50fa7b">name</span> <span style="color:#ff79c6">=</span> name;
+        <span style="color:#ff79c6">this</span>.<span style="color:#50fa7b">race</span> <span style="color:#ff79c6">=</span> race;
    }
 
-    <span style="color:#000;font-weight:bold">public</span> <span style="color:#900;font-weight:bold">String</span> getName() {
-        <span style="color:#000;font-weight:bold">return</span> name;
+    <span style="color:#8be9fd;font-style:italic">public</span> <span style="color:#50fa7b">String</span> getName() {
+        <span style="color:#ff79c6">return</span> name;
    }
 
-    <span style="color:#000;font-weight:bold">public</span> <span style="color:#900;font-weight:bold">String</span> getRace() {
-        <span style="color:#000;font-weight:bold">return</span> race;
+    <span style="color:#8be9fd;font-style:italic">public</span> <span style="color:#50fa7b">String</span> getRace() {
+        <span style="color:#ff79c6">return</span> race;
    }
 }</code></pre></div>
 <p>ייראה בקוטלין ככה</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#000;font-weight:bold">public</span> <span style="color:#000;font-weight:bold">data</span> <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Dog</span>(<span style="color:#000;font-weight:bold">val</span> name: String, <span style="color:#000;font-weight:bold">val</span> race: String)</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#ff79c6">public</span> <span style="color:#ff79c6">data</span> <span style="color:#ff79c6">class</span> <span style="color:#50fa7b">Dog</span>(
+  <span style="color:#ff79c6">val</span> name: String, 
+  <span style="color:#ff79c6">val</span> race: String
+)</code></pre></div>
 <p>כן, באמת, זה עד כדי כך קל.</p>
 
 <p>אבל זה הולך אפילו יותר עמוק. אותו קלאס בקוטלין כבר מכיל פונקציית <code>toString</code> כדי שאם נבקש להדפיס אותו (למשל בלוגים) נקבל פירוט יפה של שמות המשתנים והערכים שלהם, הוא מכיל גם פונקציית <code>equals</code> כדי שאם נשווה בין שני אובייקטים מסוג <code>Dog</code> הוא יבדוק גם האם הם בני אותו גזע וגם אם יש להם אותו שם (אנחנו ממש חייבים לשפר פה את המימוש, יש עשרות כלבי זאב עם השם זאביק) ואפילו את הפונקציה <code>hash</code> כך שכל אובייקט שלנו יקבל מזהה ייחודי (יש לזה המון שימושים בתוכנה, לא כאן המקום להאריך).</p>
@@ -98,7 +130,7 @@
 <h2 id="בטיחות">בטיחות</h2>
 
 <p>אוקיי, אז כשאומרים בטיחות מתכוונים לכמה דברים. אבל הדבר המרכזי שמופיע ב<em>כל</em> המדריכים על קוטלין הוא null safety.
-מכך שזה מופיע בעולם ניתן להבין שמדובר בסוגיה שכואבת מאוד לאנשי ג&rsquo;אווה, וזה נכון, אבל מה זה לעזאזל?!</p>
+מכך שזה מופיע בכולם ניתן להבין שמדובר בסוגיה שכואבת מאוד לאנשי ג&rsquo;אווה, וזה נכון, אבל מה זה לעזאזל?!</p>
 
 <p>ובכן, כל אובייקט חייב להיות מאותחל, זאת אומרת צריך להיות לו ערך כלשהו על מנת להשתמש בו. אם לא איתחלנו אותו הערך שלו יהיה <code>null</code> שזה בעברית פשוטה &lsquo;ריק&rsquo;.</p>
 
@@ -110,23 +142,23 @@
 ובכן היא לא לחלוטין מונעת את הבעיה הזאת, אבל היא הופכת אותה להרבה פחות נפוצה והרבה יותר קלה לבדיקה מוקדמת.</p>
 
 <p>נראה דוגמה.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Dog <span style="color:#900;font-weight:bold">dog</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">new</span> Dog(<span style="color:#d14">&#34;Boris&#34;</span>, <span style="color:#d14">&#34;Coli&#34;</span>);
-dog.<span style="color:#008080">getName</span>();
-<span style="color:#998;font-style:italic">//זה ידפיס את שם הכלב ---Boris
-</span><span style="color:#998;font-style:italic"></span>dog <span style="color:#000;font-weight:bold">=</span> <span style="color:#000;font-weight:bold">null</span>;
-dog.<span style="color:#008080">getName</span>();
-<span style="color:#000;font-weight:bold">//</span> זה <span style="color:#900;font-weight:bold">יגרום</span> לשגיאה <span style="color:#900;font-weight:bold">ויקריס</span> את <span style="color:#900;font-weight:bold">המערכת</span> </code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Dog <span style="color:#50fa7b">dog</span> <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">new</span> Dog(<span style="color:#f1fa8c">&#34;Boris&#34;</span>, <span style="color:#f1fa8c">&#34;Coli&#34;</span>);
+dog.<span style="color:#50fa7b">getName</span>();
+<span style="color:#6272a4">//זה ידפיס את שם הכלב --Boris
+</span><span style="color:#6272a4"></span>dog <span style="color:#ff79c6">=</span> <span style="color:#ff79c6">null</span>;
+dog.<span style="color:#50fa7b">getName</span>();
+<span style="color:#ff79c6">//</span>זה <span style="color:#50fa7b">יגרום</span> לשגיאה <span style="color:#50fa7b">ויקריס</span> את <span style="color:#50fa7b">המערכת</span> <span style="color:#ff79c6">--</span>NullPointerException</code></pre></div>
 <p>בדוגמה הזו אנו רואים שהפעם הראשונה שאנחנו מדפיסים את השם של הכלב, הכל עובר בסדר, יש לנו אובייקט מסוג כלב, ויש לו שם.
-אבל בפעם השניה, כבר אין לנו אובייקט של כלב, מי שמייצג אותו - <code>dog</code> - הוא כעת null, ג&rsquo;אווה לא יודעת מה לעשות עם הפקודה שלכם ואילו לה שום דרך להריץ אותה, ולכן האפליקציה מתרסקת. לא כיף.</p>
+אבל בפעם השניה, כבר אין לנו אובייקט של כלב, מי שמייצג אותו - <code>dog</code> - הוא כעת null, ג&rsquo;אווה לא יודעת מה לעשות עם הפקודה שלכם ואין לה שום דרך להריץ אותה, ולכן האפליקציה מתרסקת. לא כיף.</p>
 
-<p>אבל רגע, אתם עוצרים אותי. למה שבגלל נרצה להפוך משהו לnull?
+<p>אבל רגע, אתם עוצרים אותי. למה שבכלל נרצה להפוך משהו לnull?
 אז זו שאלה מצויינת, ולמען האמת ב99 אחוז מהמקרים אנחנו ממש לא רוצים את זה. אחד מהאנשים המשפיעים ביותר בקהילת מפתחי ג&rsquo;אווה ומייסד שיטת clean code מר <a href="Check out Uncle Bob Martin (@unclebobmartin): https://twitter.com/unclebobmartin?s=09">בוב מרטין</a> המכונה אנקל (דוד) בוב, טוען למעשה שאתם בשום אופן, לעולם לא צריכים להחזיר אובייקט שערכו null. ואני הקטן חושב שהוא צודק לגמרי.</p>
 
 <p>רק שלפעמים, בג&rsquo;אווה אין לכם ממש ברירה. נגיד ואתם מגדירים משתנה בתחילת הקלאס, אבל אתם מחכים לשרת שיחזיר לכם תשובה ורק אז תמלאו את אותו משתנה בערך. בינתיים הערך של אותו משתנה יהיה null נכון? הרי אף אחד לא נתן לו ערך אחר. אם מישהו ינסה לגשת אליו בזמן הזה האפליקציה תקרוס.</p>
 
 <p>מה עושים? בג&rsquo;אווה בדרך כלל נעשה את הדבר הבא</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#000;font-weight:bold">if</span>(dog <span style="color:#000;font-weight:bold">!=</span> <span style="color:#000;font-weight:bold">null</span>) {
-    dog.<span style="color:#008080">getName</span>();
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#ff79c6">if</span>(dog <span style="color:#ff79c6">!=</span> <span style="color:#ff79c6">null</span>) {
+    dog.<span style="color:#50fa7b">getName</span>();
 }</code></pre></div>
 <p>במקרה הזה אנחנו נקרא לערך של הכלב, רק אם הערך של <code>dog</code> הוא שונה מnull.</p>
 
@@ -135,23 +167,23 @@ dog.<span style="color:#008080">getName</span>();
 <p>ואיך זה נראה בקוטלין?
 ובכן כברירת מחדל קוטלין לא מאפשרת ליצור משתנה בלי לתת לו ערך, משתנה רגיל בקוטלין לא יכול להיות null.
 אם ננסה לכתוב משהו כזה</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#000;font-weight:bold">var</span> dog: Dog</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#ff79c6">var</span> dog: Dog</code></pre></div>
 <p>נקבל שגיאת קומפילציה.
 רק אם נכתוב למשתנה ערך, הקוד יתקמפל</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#000;font-weight:bold">var</span> dog = Dog(<span style="color:#d14">&#34;silwan&#34;</span>, <span style="color:#d14">&#34;wolf&#34;</span>)</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#ff79c6">var</span> dog = Dog(<span style="color:#f1fa8c">&#34;silwan&#34;</span>, <span style="color:#f1fa8c">&#34;wolf&#34;</span>)</code></pre></div>
 <p>אנחנו גם לא יכולים להפוך אותו אחר כך לnull בשום צורה, הקוד הבא למשל, יזרוק שגיאת קומפילציה</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">dog = <span style="color:#000;font-weight:bold">null</span></code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">dog = <span style="color:#ff79c6">null</span></code></pre></div>
 <p>אז מה אם אנחנו כן רוצים משתנה שיכול להיות null?
 אם אנחנו ממש בטוחים שזה מה שאנחנו רוצים אנחנו יכולים לעשות זאת על ידי הוספת סימן שאלה לצד הtype של המשתנה. כך, במקום הקוד הבא</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#000;font-weight:bold">val</span> dog: Dog</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#ff79c6">val</span> dog: Dog</code></pre></div>
 <p>שלא התקמפל לנו קודם, נוכל לכתוב את הקוד הבא</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#000;font-weight:bold">val</span> dog: Dog?</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#ff79c6">val</span> dog: Dog? = <span style="color:#ff79c6">null</span></code></pre></div>
 <p>והפעם זה אפילו יתקמפל.</p>
 
 <p>הכל טוב ויפה אבל מה יקרה אם נקרא לו לפני שהושם לו ערך? האם לא נקבל NPE?</p>
 
 <p>כנראה שכן, אבל זה לא יהיה כזה קל. כדי לגשת לערך של משתנה שהוגדר כ<code>nullable</code> כלומר כזה עם הסימן שאלה, אנחנו חייבים להוסיף סימן שאלה. רגע מה? ככה</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">dog<span style="color:#000;font-weight:bold">?.</span>name</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin">dog<span style="color:#ff79c6">?.</span>name</code></pre></div>
 <p>כך, רק אם dog אכן איננו null, הקריאה ל<code>name</code> תתבצע.</p>
 
 <p>יש עוד דרכים בהם קוטלין דואגת לבטיחות בקוד, כמו <a href="“Understanding Kotlin Sealed Classes” by Josias Sena https://link.medium.com/BXAJlgqkm0">sealed classes</a>, <a href="“Effective Kotlin: Item 17 — Minimize mutability” by Matthew Dolan https://link.medium.com/WKaDStxnm0">immutability</a> והאהוב עלי במיוחד <a href="https://www.programiz.com/kotlin-programming/default-named-arguments">named parameters</a>, אבל זה מספיק לעכשיו.</p>
@@ -180,14 +212,21 @@ dog.<span style="color:#008080">getName</span>();
 
 <p>טוב, אז כמו שאפשר להבין מהפוסט אני ממש אוהב את קוטלין, אני חושב שזו שפה נהדרת שגם קל ללמוד וגם קל לכתוב בה קוד טוב ויעיל.</p>
 
-<p>אבל, אני חושב שהתשובה לשאלה הזו היא יותר מורכבת. <strong>לפרוייקט חדש</strong>? הייתי אומר רק קוטלין, גוגל כבר מקדמים את קוטלין בכל מקום, זו שפה יציבה ואין שום סיבה לא להינות מכל מה שיש לה להציע.
-<strong>לפרוייקט קיים</strong> לעומת זאת אני חושב שצריך לבדוק התאמה. במיוחד בחברות גדולות לא תמיד בטוח שהתועלת תהיה גדולה יותר מהנזק האפשרי. אמנם כן, לא חייבים להחליף את הcode base מיד ואפשר לכתוב רק קלאסים חדשים בקוטלין (שתי השפות יודעות לחיות יחד באותו פרוייקט נהדר), אבל יש עוד כמה דברים לקחת בחשבון.
-* כח אדם.
-    כמה זמן יקח לכל חברי הצוות להתרגל לשפה החדשה?
-    האם כולם יכולים לכתוב (ולהבין) קוטלין ברמת הסיניוריטי שיש להם כרגע בג&rsquo;אווה?
-* שיתוף קוד.
-    אמרנו שאפשר לכתוב קוטלין גם באפליקציה שכבר מבוססת ג&rsquo;אווה, וזה נכון. אבל צריך לזכור שזה גם מביא איתו אתגרים. למשל null safety שדיברנו עליו קודם? עובד רק כשאנחנו כותבים רק בקוטלין, אם אנחנו פונים למשתנה ג&rsquo;אווה דרך קוטלין אין לנו שום וודאות שהוא לא יהיה null ולקוטלין אין שום דרך למנוע את זה, מה שאומר שנצטרך להמשיך לבצע בדיקת nullים גם בקוטלין, וזה קצת מפספס את הנקודה, לא?
-יש עוד בעיות שיכולות לצוץ בשיתוף של קוד בין שלי השפות, למשל העובדה שבג&rsquo;אווה יש פרימיטיביים ובקוטלין רק אובייקטים יכולה לפעמים לבלבל, נניח והגדרנו משתנה מסוג <code>Int</code> בקוטלין ואנחנו פונים אליו מג&rsquo;אווה, אנחנו יכולים להניח בטעות שערך הדיפולט (ברירת המחדל) שלו יהיה אפס כמו בג&rsquo;אווה, אבל זה לא נכון, ערך הדיפולט יהיה בכלל null.</p>
+<p>אבל, אני חושב שהתשובה לשאלה הזו היא יותר מורכבת. <strong>לפרוייקט חדש</strong>? הייתי אומר רק קוטלין, גוגל כבר מקדמים את קוטלין בכל מקום, זו שפה יציבה ואין שום סיבה לא להינות מכל מה שיש לה להציע.</p>
+
+<p><strong>לפרוייקט קיים</strong> לעומת זאת אני חושב שצריך לבדוק התאמה. במיוחד בחברות גדולות לא תמיד בטוח שהתועלת תהיה גדולה יותר מהנזק האפשרי. אמנם כן, לא חייבים להחליף את הcode base מיד ואפשר לכתוב רק קלאסים חדשים בקוטלין (שתי השפות יודעות לחיות יחד באותו פרוייקט נהדר), אבל יש עוד כמה דברים לקחת בחשבון.</p>
+
+<ul>
+<li><p>כח אדם.</p>
+
+<p>כמה זמן יקח לכל חברי הצוות להתרגל לשפה החדשה?
+האם כולם יכולים לכתוב (ולהבין) קוטלין ברמת הסיניוריטי שיש להם כרגע בג&rsquo;אווה?</p></li>
+
+<li><p>שיתוף קוד.</p>
+
+<p>אמרנו שאפשר לכתוב קוטלין גם באפליקציה שכבר מבוססת ג&rsquo;אווה, וזה נכון. אבל צריך לזכור שזה גם מביא איתו אתגרים. למשל null safety שדיברנו עליו קודם? עובד רק כשאנחנו כותבים רק בקוטלין, אם אנחנו פונים למשתנה ג&rsquo;אווה דרך קוטלין אין לנו שום וודאות שהוא לא יהיה null ולקוטלין אין שום דרך למנוע את זה, מה שאומר שנצטרך להמשיך לבצע בדיקת nullים גם בקוטלין, וזה קצת מפספס את הנקודה, לא?
+יש עוד בעיות שיכולות לצוץ בשיתוף של קוד בין שתי השפות, למשל העובדה שבג&rsquo;אווה יש פרימיטיביים ובקוטלין רק אובייקטים יכולה לפעמים לבלבל, נניח והגדרנו משתנה מסוג <code>Int</code> בקוטלין ואנחנו פונים אליו מג&rsquo;אווה, אנחנו יכולים להניח בטעות שערך הדיפולט (ברירת המחדל) שלו יהיה אפס כמו בג&rsquo;אווה, אבל זה לא נכון, ערך הדיפולט יהיה בכלל null.</p></li>
+</ul>
 
 <h2 id="מה-ללמוד">מה ללמוד?</h2>
 
@@ -202,12 +241,17 @@ dog.<span style="color:#008080">getName</span>();
 
 <p>הייתי מציע למפתח מתחיל ללמוד קודם ג&rsquo;אווה, כדי להכיר את השפה ברמה הבסיסית, ורק אז ללמוד מדריכים לאנדרואיד בקוטלין.</p>
 
-<p>זהו, זה השנקל שלח בעניין. אוהבות קוטלין? לא מסוגלות לזוז בלי ג&rsquo;אווה? יאללה, תבעירו אש בתגובות</p>
+<p>זה אולי נשמע מפחיד, אבל שתי השפות לא מאוד שונות ואפשר ללמוד את שתיהן די בקלות, לפחות ברמה הבסיסית. וללמוד ג׳אווה ברמה בסיסית רק יתן לכם בסיס טוב יותר ללימוד קוטלין אחר כך.</p>
+
+<p>בספר שאני כותב עכשיו, אני נותן פרוייקט אחד בג׳אווה, כדי שתהיה היכרות עם השפה, ואחר כך שאר הפרוייקטים בספר הם בקוטלין בלבד, כדי להגיע לרמת שליטה טובה בשפה.</p>
+
+<p>זהו, זה השנקל שלי בעניין. אוהבות קוטלין? לא מסוגלות לזוז בלי ג&rsquo;אווה? יאללה, תבעירו אש בתגובות</p>
 
 
 </article>
 
- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d7ffc9b322233b4"></script>
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d7ffc9b322233b4"></script>
 
 <div id="disqus_thread"></div>
 <script type="application/javascript">
@@ -229,6 +273,7 @@ dog.<span style="color:#008080">getName</span>();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
 <footer class="site-footer">
   <span itemscope itemtype="http://schema.org/Person">
     <link itemprop="url" href="https://androidoss.now.sh">
@@ -243,22 +288,11 @@ dog.<span style="color:#008080">getName</span>();
     
   </span>
 
-  <span>
-    <form style="border:1px solid #ccc;padding:3px;text-align:center;" action="https://tinyletter.com/orelzion"
-      method="post" target="popupwindow"
-      onsubmit="window.open('https://tinyletter.com/orelzion', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-      <p><label for="tlemail">הירשמו לקבלת עדכונים</label></p>
-      <p><input type="text" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1"
-        name="embed" /><input type="submit" value="אני רוצה להתעדכן" />
-      <p><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></p>
-    </form>
-  </span>
+
 
   
 </footer>
 </div>
-
-
 
 </body>
 

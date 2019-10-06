@@ -1,0 +1,10 @@
+{{ partial "top.html" . }}
+
+
+<ul>
+    {{ range .Site.Taxonomies.tags }}
+    <a class="tags" href="{{ .Page.Permalink }}">#{{ .Page.Title }}({{ .Count }})</a>
+    {{ end }}
+</ul>
+
+{{ partial "bottom.html" . }}

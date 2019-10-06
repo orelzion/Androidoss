@@ -3,8 +3,13 @@
 <article class="post">
   <header class="post-header">
     <h1 class="post-title">{{ .Title }}</h1>
-    <time class="post-date"
-      datetime="{{ .Date.Format "2006-01-02 15:04:05 MST" }}">{{ .Date.Format "02 Jan 2006" }}</time>
+    <div class="post-meta">
+      <time class="post-date" datetime="{{ .Date.Format "2006-01-02 15:04:05 MST" }}">
+        {{ .Date.Day }} {{ index $.Site.Data.mois (printf "%d" .Date.Month) }} {{ .Date.Year }}
+      </time>
+      <span class="reading-time">({{ .ReadingTime }} דקות קריאה)</span>
+    </div>
+    {{ partial "tags.html" .}}
   </header>
 
   <div class="addthis_inline_share_toolbox"></div>
@@ -13,7 +18,8 @@
 
 </article>
 
-<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d7ffc9b322233b4"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d7ffc9b322233b4"></script>
 
 {{ template "_internal/disqus.html" . }}
 {{ partial "bottom.html" . }}
