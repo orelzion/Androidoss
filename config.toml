@@ -9,3 +9,4 @@ pygmentsStyle = "dracula"
 
 [params]
     primaryColor = "#ffee58"
+    description = "בלוג למפתחי אנדרואיד מתחילים על פיתוח אפליקציות לאנדרואיד בעברית"

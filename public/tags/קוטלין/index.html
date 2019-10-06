@@ -1,62 +1,47 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode }}">
+<html lang="iw-IL">
 
 <head>
   <meta charset="utf-8">
-  {{ hugo.Generator }}
+  <meta name="generator" content="Hugo 0.58.1" />
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="{{ .Site.Author.name }}">
-  <meta property="og:url" content="{{ .Permalink }}">
+  <meta name="author" content="">
+  <meta property="og:url" content="https://androidoss.now.sh/tags/%D7%A7%D7%95%D7%98%D7%9C%D7%99%D7%9F/">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  {{ if .IsHome -}}
-  <title>{{ .Site.Title }}</title>
-  <meta property="og:title" content="{{ .Site.Title }}">
-  <meta property="og:type" content="website">
-  {{- else -}}
-  <title>{{ .Title }} - {{ .Site.Title }}</title>
-  <meta property="og:title" content="{{ .Title }} - {{ .Site.Title }}">
+  <title>קוטלין - אנדרוידוס - בלוג על אנדרואיד בעברית</title>
+  <meta property="og:title" content="קוטלין - אנדרוידוס - בלוג על אנדרואיד בעברית">
   <meta property="og:type" content="article">
-  {{- end }}
 
-  <meta name="description" content="{{ with .Description }}
-{{ . }}
-{{ else }}
-{{if .IsPage}}{{ .Summary }}
-{{ else }}{{ with .Site.Params.description }}
-{{ . }}
-{{ end }}{{ end }}{{ end }}">
+  <meta name="description" content="
 
-  {{if isset .Params "keywords"}}
-  <meta name="keywords" content="{{ delimit .Keywords ", " }},
-אנדרואיד, פיתוח אפליקציות" />
-  {{else}}
-  {{if isset .Params "tags"}}
-  <meta name="keywords" content="{{ delimit .Params.Tags ", " }}, 
-        אנדרואיד, פיתוח אפליקציות" />
-  {{else}}
+בלוג למפתחי אנדרואיד מתחילים על פיתוח אפליקציות לאנדרואיד בעברית
+">
+
+  
+  
   <meta name="keywords" content="אנדרואיד, פיתוח אפליקציות" />
-  {{end}}
-  {{end}}
+  
+  
 
   <link href="https://fonts.googleapis.com/css?family=Tinos&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Secular+One|Arvo:400,700">
-  <!-- <link rel="stylesheet" href="{{ "css/highlight.css" | relURL }}"> -->
-  <link rel="stylesheet" href="{{ "css/journal.css" | relURL }}">
-  <link href="{{ "index.xml" | relURL }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
+  
+  <link rel="stylesheet" href="/css/journal.css">
+  <link href="/index.xml" rel="alternate" type="application/rss+xml" title="אנדרוידוס - בלוג על אנדרואיד בעברית">
 
 </head>
 
 <body>
   <div class="sidebar-wrapper">
     <div class="about-container">
-      <a href="{{ .Site.BaseURL }}">
-        <p class="header-text">{{ .Site.Title }}</p>
+      <a href="https://androidoss.now.sh">
+        <p class="header-text">אנדרוידוס - בלוג על אנדרואיד בעברית</p>
       </a>
       <p class="subheader-text">
         בלוג למפתחי אנדרואיד מתחילים.
@@ -75,3 +60,39 @@
   </div>
 
   <div class="container">
+
+<span class="tags">
+    #קוטלין
+</span>
+<ul class="posts-of-tags">
+    
+    <li>
+        <a href="/post/java_or_kotlin/">ג׳אווה או קוטלין</a>
+    </li>
+    
+</ul>
+
+</div>
+<footer class="site-footer">
+  <span itemscope itemtype="http://schema.org/Person">
+    <link itemprop="url" href="https://androidoss.now.sh">
+    <span itemprop="name"></span>
+
+    <br>
+
+    
+
+    
+
+    
+  </span>
+
+
+
+  
+</footer>
+</div>
+
+</body>
+
+</html>
