@@ -1,6 +1,9 @@
 {{ partial "top.html" . }}
 
-<ul>
+<span class="tags">
+    #{{ .Data.Term }}
+</span>
+<ul class="posts-of-tags">
     {{ range .Data.Pages }}
     <li>
         <a href="{{.RelPermalink}}">{{ .Title }}</a>
