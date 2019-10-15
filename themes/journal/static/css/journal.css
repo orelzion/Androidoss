@@ -94,6 +94,7 @@ abbr {
   text-decoration: none;
   cursor: help; }
 
+.highlight,
 kbd,
 code,
 pre {
@@ -101,9 +102,18 @@ pre {
   direction: ltr;
 }
 
-pre {
+code {
+  background: #fff9c4;
+  font-weight: bold;
+}
+
+code.language-java {
+  background: inherit;
+  font-weight: normal;
+}
+
+.highlight {
   max-width: 100%; 
-  white-space: pre-wrap;
   border-radius: 5px;
   padding: 3px;
 }
