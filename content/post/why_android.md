@@ -9,6 +9,10 @@ keywords: ["בקאנד", "פרונטאנד", "פיתוח אפליקציות", "�
 tags: ["מתחילים"]
 ---
 
+![why](/why_android.jpg)
+
+<small>Photo by [Evan Dennis](https://unsplash.com/@evan__bray?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/question?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)</small>
+
 אז אם אתם קוראים את הבלוג הזה, סביר להניח שיש לכם כבר כמה רעיונות למה בעצם אתם רוצים לפתח לאנדרואיד, אבל אני אנסה לתת פה בכל זאת את ההבנה שלי בנושא.
 
 ## פיתוח זה כיף

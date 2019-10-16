@@ -5,8 +5,11 @@ draft: false
 keywords: ["ג׳אווה", "קוטלין", "named parameters", "null", "null check", "בדיקת null"]
 tags: ["קוטלין", "מתחילים"]
 ---
-טוב זו שאלה שיכולה להבעיר מחלקות פיתוח שלמות 😀
-אבל כדי לענות עליה, ננסה להבין קודם מה זה בכלל קוטלין.
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F206275233290027%2Fphotos%2Fa.206281073289443%2F497038737547007%2F%3Ftype%3D3&width=500" width="500" height="506" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+טוב זו שאלה שיכולה להבעיר מחלקות פיתוח שלמות 😀. תשמעו מפתחים שאומרים לכם שקוטלין זה הדבר הכי טוב מאז המצאת הנורה, ומפתחים שלא מוכנים בשום אופן לעזוב את ג׳אווה.
+
+אבל כדי לענות עליה, ננסה להבין קודם מה זה בכלל קוטלין, ובסוף ננסה להבין מה הכי כדאי למפתח המתחיל ללמוד.
 
 # מה זה קוטלין?
 קוטלין היא שפת תכנות מודרנית שפותחה על ידי [JetBrains](http://jetbrains.com/) (אותה חברה שפיתחה את IntelliJ שעליה מבוסס אנדרואיד סטודיו) בשנת 2011. בשנת 2017 היא הוכרזה כשפה רשמית לפיתוח לאנדרואיד על ידי גוגל, וכיום כל המדריכים באתר של גוגל כוללים דוגמאות קוד גם בקוטלין. 
