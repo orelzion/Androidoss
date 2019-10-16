@@ -107,7 +107,8 @@ code {
   font-weight: bold;
 }
 
-code.language-java {
+code.language-java,
+code.language-kotlin {
   background: inherit;
   font-weight: normal;
 }
