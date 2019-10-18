@@ -1,0 +1,12 @@
+{{ with .Get "text" }}
+<form style="border:4px solid #ffee58;padding:1rem;margin:1rem;text-align:center;"
+    action="https://tinyletter.com/orelzion" method="post" target="popupwindow"
+    onsubmit="window.open('https://tinyletter.com/orelzion', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+    <p>{{ . }}</p>
+    <p><label for="tlemail">הכנס/י את כתובת האימייל שלך</label></p>
+    <p><input type="text" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1"
+        name="embed" /><input class="btn" type="submit" value="עדכן אותי" />
+    </p>
+    <p><a style="font-size: 8px" href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></p>
+</form>
+{{ end }}
