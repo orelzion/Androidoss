@@ -80,8 +80,10 @@ mixpanel.init("279a897cfc6532863ba07c5ae7402782");</script><!-- end Mixpanel -->
       
       <script type="text/javascript">
         mixpanel.track_links("#nav a", "click nav link", function(link) {
+          return {
             "referrer": document.referrer,
             "nav_name": $(link).attr('value')
+          }
         });
       </script>
     </div>
