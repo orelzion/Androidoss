@@ -71,13 +71,21 @@ mixpanel.init("279a897cfc6532863ba07c5ae7402782");</script><!-- end Mixpanel -->
         <br>
         כרגע מפתח ב<a href='https://ridewithvia.com/' target="_blank">Via</a>.
       </p>
-      <p class="site-links">
+      <p class="site-links" id="nav">
         <a href="/">כל הפוסטים</a>
         <a href="/tags">תגיות</a>
         <a href="/post/aboutme_post">אודות</a>
         <a href="https://tinyletter.com/orelzion">ניוזלטר</a>
       </p>
+      
+      <script type="text/javascript">
+        mixpanel.track_links("#nav a", "click nav link", {
+            "referrer": document.referrer
+        });
+      </script>
     </div>
   </div>
 
   <div class="container">
+
+    
