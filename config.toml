@@ -1,6 +1,6 @@
 baseURL = "https://androidoss.now.sh"
 languageCode = "iw-IL"
-title = "אנדרוידוס - בלוג על אנדרואיד בעברית"
+title = "אנדרואידוס - בלוג על אנדרואיד בעברית"
 theme = "journal"
 
 disqusShortname = "androidoss"
