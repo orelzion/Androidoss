@@ -3,6 +3,7 @@ title: "בילדר (Builder) - בניית אובייקטים גמישה"
 date: 2019-10-24T23:10:38+03:00
 tags: ["design patterns"]
 keywords: ["בילדר", "design patterns"]
+images: ["/builder.jpg"]
 draft: false
 ---
 

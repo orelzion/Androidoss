@@ -3,6 +3,7 @@ title: "סינגלטון - כשלהיות יחיד זה מיוחד"
 date: 2019-10-14T20:58:43+03:00
 tags: ["design patterns"]
 keywords: ["קוטלין", "סינגלטון", "design patterns"]
+images: ["/singelton.jpg"]
 draft: false
 ---
 

@@ -13,6 +13,9 @@
           {{ .Date.Day }} {{ index $.Site.Data.mois (printf "%d" .Date.Month) }}
         </time>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ range .Params.images -}}
+          <img src="{{ . }}"></img>
+        {{- end }}
         <p>{{ .Summary }}</p>
         <a class="read-more" href="{{ .RelPermalink }}">לחצו לקרוא את ההמשך</a>
       </li>
