@@ -4,6 +4,7 @@ title = "אנדרואידוס - בלוג על אנדרואיד בעברית"
 theme = "journal"
 
 disqusShortname = "androidoss"
+googleAnalytics = "UA-151592580-1"
 pygmentsCodefences = true
 pygmentsStyle = "dracula"
 
