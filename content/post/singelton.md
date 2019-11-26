@@ -3,11 +3,11 @@ title: "סינגלטון - כשלהיות יחיד זה מיוחד"
 date: 2019-10-14T20:58:43+03:00
 tags: ["design_patterns"]
 keywords: ["קוטלין", "סינגלטון", "design patterns"]
-images: ["/singelton.jpg"]
+images: ["/post_images/singelton.jpg"]
 draft: false
 ---
 
-![singleton](/singelton.jpg)
+![singleton](/post_images/singelton.jpg)
 
 סינגלטון הוא אחד מהדיזיין פטרנס (תבניות קוד לפתרון בעיות נפוצות) הנפוצים ביותר בג׳אווה ואולי בכלל.
 

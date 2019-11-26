@@ -167,6 +167,12 @@ h6 {
   direction: rtl;
 }
 
+.all-posts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .header-text {
   font-family: 'Secular One', sans-serif;
   color: #4a4a4a;
@@ -299,10 +305,23 @@ h6 {
         margin-left: 2rem; } }
 
 .post .post-header {
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem; 
+}
+
 .post .post-date {
   margin: 0 0 1rem;
-  text-align: right; }
+  text-align: right; 
+}
+
+.post-date {
+  margin-right: 25px;
+  margin-top: 0.2rem;
+  font-size: 0.5rem;
+}
+
+.card-content {
+  font-size: 0.7rem;;
+}
 
 .hljs {
   font-size: .875rem; }
@@ -367,3 +386,16 @@ h6 {
     transition: width .2s ease-out, padding-top .2s ease-out;
   }
   
+  .card .card-image .card-title {
+    left: auto;
+    color: #303030;
+  }
+
+  .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    margin-right: 0px;
+    color: #ffee58;
+  }
+
+  .card .card-action {
+    background-color: #303030;
+  }
