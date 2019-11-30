@@ -4,10 +4,10 @@ date: 2019-09-21T22:08:34+03:00
 draft: false
 keywords: ["בקאנד", "פרונטאנד", "פיתוח אפליקציות", "פיתוח בעברית", "אנדרואיד בעברית", "פיתוח אפליקציות בעברית"]
 tags: ["מתחילים"]
-images: ["/why_android.jpg"]
+images: ["/post_images/why_android.jpg"]
 ---
 
-![why](/why_android.jpg)
+![why](/post_images/why_android.jpg)
 
 <small>Photo by [Evan Dennis](https://unsplash.com/@evan__bray?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/question?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)</small>
 

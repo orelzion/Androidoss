@@ -3,11 +3,11 @@ title: "בילדר (Builder) - בניית אובייקטים גמישה"
 date: 2019-10-24T23:10:38+03:00
 tags: ["design_patterns"]
 keywords: ["בילדר", "design patterns", "builder", "java"]
-images: ["/builder.jpg"]
+images: ["/post_images/builder.jpg"]
 draft: false
 ---
 
-![builder](/builder.jpg)
+![builder](/post_images/builder.jpg)
 
 אז אחרי שלמדנו איך יוצרים [סינגלטון](/post/singelton) ולמה, הגיע הזמן לדיזיין פטרן (Design Pattern) הבא ברשימת ה**creational**.
 
