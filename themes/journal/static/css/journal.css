@@ -77,6 +77,7 @@ ol,
 ul {
   margin: 0 0 1rem 1.25rem;
   padding: 0;
+  list-style-type: circle;
   list-style-position: outside; }
   ol ol,
   ol ul,
@@ -85,7 +86,8 @@ ul {
     margin-bottom: 0; }
 
 li {
-  margin: 0; }
+  margin: 0; 
+}
   li:not(last-of-type) {
     margin-bottom: .4rem; }
 
@@ -108,7 +110,8 @@ code {
 }
 
 code.language-java,
-code.language-kotlin {
+code.language-kotlin,
+code.language-bash {
   background: inherit;
   font-weight: normal;
 }

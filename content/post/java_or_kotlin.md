@@ -5,7 +5,6 @@ draft: false
 keywords: ["ג׳אווה", "קוטלין", "named parameters", "null", "null check", "בדיקת null"]
 tags: ["קוטלין", "מתחילים"]
 ---
-<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F206275233290027%2Fphotos%2Fa.206281073289443%2F497038737547007%2F%3Ftype%3D3&width=500" width="500" height="506" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 
 טוב זו שאלה שיכולה להבעיר מחלקות פיתוח שלמות 😀. תשמעו מפתחים שאומרים לכם שקוטלין זה הדבר הכי טוב מאז המצאת הנורה, ומפתחים שלא מוכנים בשום אופן לעזוב את ג׳אווה.
 
@@ -56,6 +55,9 @@ public data class Dog(
 כל הדברים האלה שבאים בחינם בקוטלין, נדרשים להיכתב באופן ידני בג'אווה, וכל שינוי בהגדרת המשתנים בג'אווה דורש עדכון ידני של כל הפונקציות האלה. קוטלין פשוט חוסכת לנו כתיבה של המון קוד ומלא תחזוקה.
 
 ## בטיחות
+
+<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F206275233290027%2Fphotos%2Fa.206281073289443%2F497038737547007%2F%3Ftype%3D3&width=500" width="500" height="506" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
 אוקיי, אז כשאומרים בטיחות מתכוונים לכמה דברים. אבל הדבר המרכזי שמופיע ב*כל* המדריכים על קוטלין הוא null safety.
 מכך שזה מופיע בכולם ניתן להבין שמדובר בסוגיה שכואבת מאוד לאנשי ג'אווה, וזה נכון, אבל מה זה לעזאזל?!
 

@@ -7,8 +7,6 @@ images: ["/post_images/builder.jpg"]
 draft: false
 ---
 
-![builder](/post_images/builder.jpg)
-
 אז אחרי שלמדנו איך יוצרים [סינגלטון](/post/singelton) ולמה, הגיע הזמן לדיזיין פטרן (Design Pattern) הבא ברשימת ה**creational**.
 
 בילדר (Builder) הוא עוד אחד מהפטרנים הנפוצים, למעשה אם יצא לכם לפתח לאנדרואיד אפילו קצת כנראה שכבר נתקלתם בו כמה פעמים, תכף נראה איפה.

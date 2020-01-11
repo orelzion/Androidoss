@@ -10,6 +10,7 @@
       <span class="reading-time">({{ .ReadingTime }} דקות קריאה)</span>
     </div>
     {{ partial "tags.html" .}}
+    <img alt="{{ .Title }}" src="/post_images/{{ .File.BaseFileName }}.jpg" />
   </header>
 
   {{ .Content }}

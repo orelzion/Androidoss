@@ -8,8 +8,6 @@ images: ["/post_images/builder_kotlin.jpg"]
 draft: false
 ---
 
-![kotlin builder](/post_images/builder_kotlin.jpg)
-
 בפוסט הקודם על [בילדר](/post/builder), הסברנו למה בילדר זה פטרן חשוב, איפה משתמשים בו ואיך. אמרנו גם שהוא כל כך נפוץ שאתם בטח כבר משתמשים בו ולא שמתם לב. 
 
 אז אמרנו.
