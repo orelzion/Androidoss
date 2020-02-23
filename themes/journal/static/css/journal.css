@@ -401,3 +401,7 @@ h6 {
   .card .card-action {
     background-color: #303030;
   }
+
+  strong {
+    font-weight: bold;
+  }
