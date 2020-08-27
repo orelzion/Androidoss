@@ -960,7 +960,13 @@
 	<script src="bootcamp_assets/plugins/jquery.scrollTo.min.js"></script>
 	<script src="bootcamp_assets/js/main.js"></script>
 	<script type="text/javascript">
-		mixpanel.track_links("a", "button button", function (element) {
+
+		$(document).ready(function () {
+			console.log("ready!");
+			mixpanel.track("bootcamp page load", { "referrer": document.referrer })
+		});
+
+		mixpanel.track_links("a", "button click", function (element) {
 			return {
 				"btn": element.text,
 				"referrer": document.referrer
