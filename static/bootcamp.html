@@ -829,9 +829,7 @@
 									</div>
 									<!--//plan-content-->
 									<div class="plan-cta text-center px-4">
-										<a class="btn btn-ghost btn-block"
-											href="https://www.drove.com/campaign/5f3ad800c87640000182eb2d"
-											target="_blank">שמרו מקום עכשיו!</a>
+										<a class="btn btn-ghost btn-block" href="#lead-form">שמרו מקום עכשיו!</a>
 									</div>
 								</div>
 								<!--//plan-item-->
@@ -887,6 +885,32 @@
 			<!--//container-->
 		</div>
 		<!--//section-pricing-->
+
+		<div class="lead-form-wrapper single-col-max mx-auto theme-bg-light rounded p-5">
+			<h4 class="form-heading text-center mb-3">בואו לדבר איתי על הכל</h4>
+			<div class="form-intro text-center mb-3">הירשמו עכשיו לוובינר בחינם, בואו לשמוע עוד ולשאול שאלות.</div>
+			<div class="form-wrapper">
+				<form id="lead-form" class="lead-form">
+					<div class="form-group mb-3">
+						<label for="full_name" class="sr-only">שם מלא</label>
+						<input type="text" class="form-control " id="full_name" placeholder="שם מלא">
+					</div>
+					<div class="form-group mb-3">
+						<label for="email" class="sr-only">אימייל</label>
+						<input type="email" class="form-control " id="email" placeholder="אימייל">
+					</div>
+					<div class="form-group mb-3">
+						<label for="phone" class="sr-only">מספר טלפון</label>
+						<input type="tel" class="form-control " id="phone" placeholder="מספר טלפון">
+					</div>
+					<button type="submit" class="btn btn-ghost btn-submit btn-block">שמרו מקום עכשיו!</button>
+				</form>
+			</div>
+			<!--//form-wrapper-->
+		</div>
+		<br />
+		<br />
+		<!--//lead-form-wrapper-->
 
 		<div class="section section-contact text-center">
 			<div class="container">
@@ -953,7 +977,34 @@
 	</div>
 	<!--//modal-->
 
+	<!-- Thank you Modal -->
+	<div id="thank-you" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">יופי שנרשמתם, ניפגש בקרוב!</h4>
+				</div>
+				<div class="modal-body">
+					<p>בינתיים תוכלו להוריד את הסילבוס המלא מ<a target="_blank"
+							href="https://docs.google.com/document/d/1IPmXe74nNuYrPdVcxAw352k8kfaP6I5c-SUZH0PXnW0/edit?usp=sharing">כאן</a>
+						<br />
+						בהצלחה!
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">נתראה!</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
 	<!-- Javascript -->
+	<!-- Load the Firebase library before loading the body. -->
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-analytics.js"></script>
 	<script src="bootcamp_assets/plugins/jquery-3.4.1.min.js"></script>
 	<script src="bootcamp_assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 	<script src="bootcamp_assets/plugins/back-to-top.js"></script>
@@ -961,9 +1012,50 @@
 	<script src="bootcamp_assets/js/main.js"></script>
 	<script type="text/javascript">
 
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: "AIzaSyCk5DPn4uIplI2QledL1yGbtFNLrfGHQPA",
+			authDomain: "androidoss-6e251.firebaseapp.com",
+			databaseURL: "https://androidoss-6e251.firebaseio.com",
+			projectId: "androidoss-6e251",
+			storageBucket: "androidoss-6e251.appspot.com",
+			messagingSenderId: "455832766144",
+			appId: "1:455832766144:web:f66c55cc27a65823cb4f25",
+			measurementId: "G-KK4DSQNPME"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+
+		// Form submission
+		// Reference to the recommendations object in your Firebase database
+		var leads = firebase.database().ref("webinar-leads");
+
+		// Save a new leads to the database, using the input in the form
+		var submitLeads = function () {
+
+			// Get input values from each of the form elements
+			var email = $("#email").val();
+			var name = $("#full_name").val();
+			var phone = $("#phone").val();
+
+			// Push a new leads to the database using those values
+			leads.push({
+				"email": email,
+				"name": name,
+				"phone": phone
+			});
+
+			$("#email").val("")
+			$("#full_name").val("")
+			$("#phone").val("")
+
+			$("#thank-you").modal()
+		};
+
 		$(document).ready(function () {
 			console.log("ready!");
 			mixpanel.track("bootcamp page load", { "referrer": document.referrer })
+			$("#lead-form").submit(submitLeads);
 		});
 
 		mixpanel.track_links("a", "button click", function (element) {
