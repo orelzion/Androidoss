@@ -1,0 +1,30 @@
+@import url("theme-9.css");
+
+body {
+    color: black;
+    font-family: 'Alef', sans-serif;
+}
+
+.hero-section {
+    background: url("../images/colorful.jpg") no-repeat center center; 
+}
+
+.hero-heading {
+    color: black;
+}
+
+.hero-summary .summary-desc {
+    color: black;
+}
+
+.hero-summary .summary-heading {
+    color: black;
+}
+
+.hero-summary .item {
+    border-right: 1px solid #000;
+}
+
+.hero-summary .item:last-child {
+    border-right: 1px solid #000;
+}
