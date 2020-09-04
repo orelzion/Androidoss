@@ -48,7 +48,7 @@
 						<span class="desc d-block">מאפס למשרת פיתוח בהייטק ב4 חודשים</span>
 					</h1>
 					<div class="text-center mb-5">
-						<a href="#section-pricing" class="btn btn-primary btn-lg scrollto">הירשמו עכשיו</a>
+						<a href="#section-pricing" class="btn btn-primary btn-lg scrollto">בואו למפגש היכרות</a>
 					</div>
 
 					<div class="hero-summary">
@@ -761,8 +761,8 @@
 									<ul class="social-list list-unstyled mt-4 mb-0 mx-auto mx-lg-0">
 										<li class="list-inline-item"><a href="https://github.com/orelzion"><i
 													class="fab fa-github fa-fw"></i></a></li>
-										<li class="list-inline-item"><a href="https://twitter.com/orelzion"><i
-													class="fab fa-twitter fa-fw"></i></a></li>
+										<li class="list-inline-item"><a href="https://www.linkedin.com/in/orel-zion-86122665"><i
+													class="fab fa-linkedin fa-fw"></i></a></li>
 										<li class="list-inline-item"><a href="https://androidoss.now.sh"><i
 													class="fa fa-globe fa-fw"></i></a></li>
 									</ul>
@@ -815,7 +815,9 @@
 									</div>
 									<!--//plan-content-->
 									<div class="plan-cta text-center px-4">
-										<a class="btn btn-ghost btn-block" href="#lead-form">שמרו מקום עכשיו!</a>
+										<a class="btn btn-ghost btn-block"
+											href="https://www.drove.com/campaign/5f3ad800c87640000182eb2d">שמרו מקום
+											עכשיו!</a>
 									</div>
 								</div>
 								<!--//plan-item-->
@@ -872,30 +874,6 @@
 		</div>
 		<!--//section-pricing-->
 
-		<div class="lead-form-wrapper single-col-max mx-auto theme-bg-light rounded p-5">
-			<h4 class="form-heading text-center mb-3">בואו לדבר איתי על הכל</h4>
-			<div class="form-intro text-center mb-3">הירשמו עכשיו לוובינר בחינם, בואו לשמוע עוד ולשאול שאלות.</div>
-			<div class="form-wrapper">
-				<form id="lead-form" class="lead-form">
-					<div class="form-group mb-3">
-						<label for="full_name" class="sr-only">שם מלא</label>
-						<input type="text" class="form-control " id="full_name" placeholder="שם מלא">
-					</div>
-					<div class="form-group mb-3">
-						<label for="email" class="sr-only">אימייל</label>
-						<input type="email" class="form-control " id="email" placeholder="אימייל">
-					</div>
-					<div class="form-group mb-3">
-						<label for="phone" class="sr-only">מספר טלפון</label>
-						<input type="tel" class="form-control " id="phone" placeholder="מספר טלפון">
-					</div>
-					<button type="submit" class="btn btn-ghost btn-submit btn-block">שמרו מקום עכשיו!</button>
-				</form>
-			</div>
-			<!--//form-wrapper-->
-		</div>
-		<br />
-		<br />
 		<!--//lead-form-wrapper-->
 
 		<div class="section section-contact text-center">
@@ -941,28 +919,6 @@
 	</footer>
 	<!--//footer-->
 
-	<!-- Video Modal -->
-	<div class="modal modal-video" id="modal-video" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<div class="modal-body">
-					<div class="video-container embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" width="560" height="315"
-							src="https://www.youtube.com/embed/8TnBZ8rom9c" frameborder="0"
-							allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
-					</div>
-					<!--//video-container-->
-				</div>
-				<!--//modal-body-->
-			</div>
-			<!--//modal-content-->
-		</div>
-		<!--//modal-dialog-->
-	</div>
-	<!--//modal-->
-
 	<!-- Thank you Modal -->
 	<div id="thank-you" class="modal fade" role="dialog">
 		<div class="modal-dialog">
@@ -996,6 +952,8 @@
 	<script src="bootcamp_assets/plugins/back-to-top.js"></script>
 	<script src="bootcamp_assets/plugins/jquery.scrollTo.min.js"></script>
 	<script src="bootcamp_assets/js/main.js"></script>
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f51df91382f612a"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151592580-1">
 	</script>
@@ -1020,46 +978,6 @@
 	<!-- End Facebook Pixel Code -->
 	<script type="text/javascript">
 
-		// Your web app's Firebase configuration
-		var firebaseConfig = {
-			apiKey: "AIzaSyCk5DPn4uIplI2QledL1yGbtFNLrfGHQPA",
-			authDomain: "androidoss-6e251.firebaseapp.com",
-			databaseURL: "https://androidoss-6e251.firebaseio.com",
-			projectId: "androidoss-6e251",
-			storageBucket: "androidoss-6e251.appspot.com",
-			messagingSenderId: "455832766144",
-			appId: "1:455832766144:web:f66c55cc27a65823cb4f25",
-			measurementId: "G-KK4DSQNPME"
-		};
-		// Initialize Firebase
-		firebase.initializeApp(firebaseConfig);
-
-		// Form submission
-		// Reference to the recommendations object in your Firebase database
-		var leads = firebase.database().ref("webinar-leads");
-
-		// Save a new leads to the database, using the input in the form
-		var submitLeads = function () {
-
-			// Get input values from each of the form elements
-			var email = $("#email").val();
-			var name = $("#full_name").val();
-			var phone = $("#phone").val();
-
-			// Push a new leads to the database using those values
-			leads.push({
-				"email": email,
-				"name": name,
-				"phone": phone,
-				"refferer": document.referrer
-			});
-
-			$("#email").val("")
-			$("#full_name").val("")
-			$("#phone").val("")
-
-			$("#thank-you").modal()
-		};
 
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
