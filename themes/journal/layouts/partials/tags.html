@@ -1,10 +1,1 @@
-{{ $taxonomy := "tags" }}
-{{ with .Param $taxonomy }}
-<ul class="tags-container">
-    {{ range $index, $tag := . }}
-    {{ with $.Site.GetPage (printf "/%s/%s" $taxonomy $tag) -}}
-    <a class="tags" href="{{ .Permalink }}">#{{ $tag }}</a>
-    {{- end -}}
-    {{- end -}}
-</ul>
-{{ end }}
+<meta http-equiv="refresh" content="0; URL=https://www.androidoss.dev/tags" />
